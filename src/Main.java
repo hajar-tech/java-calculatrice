@@ -16,25 +16,25 @@ public class Main {
     }
     public static void Soustraction() {
         double num1, num2;
-        Scanner scanner = new Scanner(System.in);
+       Scanner scanner = new Scanner(System.in);
         System.out.println("enter the first number: ");
         num1 = scanner.nextDouble();
         System.out.println("enter the second number: ");
         num2 = scanner.nextDouble();
         System.out.println("The result is: "+(num1-num2));
     }
-  /*  public static void Multiplication() {
+   public static  void Multiplication() {
         double num1, num2;
-        Scanner scanner = new Scanner(System.in);
+       Scanner scanner = new Scanner(System.in);
         System.out.println("enter the first number: ");
         num1 = scanner.nextDouble();
         System.out.println("enter the second number: ");
         num2 = scanner.nextDouble();
         System.out.println("The result is: "+(num1*num2));
     }
-    public static void Division() {
+  /*  public  void Division() {
         double num1, num2;
-        Scanner scanner = new Scanner(System.in);
+        //Scanner scanner = new Scanner(System.in);
         System.out.println("enter the first number: ");
         num1 = scanner.nextDouble();
         System.out.println("enter the second number: ");
@@ -84,23 +84,25 @@ public class Main {
                case 3:
                    Multiplication();
                    break;
-               case 4:
+             /*  case 4:
                    Division();
                    break;
                case 5:
                    Puissance();
                    break;
-             /*  case 6:
+             / case 6:
                    Racine();
                    break;
                case 7:
                    Factorielle();
                    break;*/
                case 8:
+                   System.out.println("you finished the programme");
                    break;
-
+               default:
+                   System.out.println("chose a number from the menu!!!!");
            }
        }
-       while (choix != 0);
+       while (choix != 8);
     }
 }
