@@ -32,9 +32,9 @@ public class Main {
         num2 = scanner.nextDouble();
         System.out.println("The result is: "+(num1*num2));
     }
-  /*  public  void Division() {
+   public static void Division() {
         double num1, num2;
-        //Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.println("enter the first number: ");
         num1 = scanner.nextDouble();
         System.out.println("enter the second number: ");
@@ -45,7 +45,7 @@ public class Main {
             System.out.println("The result is: " + (num1 / num2));
         }
     }
-    public static void Puissance() {
+  /*  public static void Puissance() {
         double base, pow;
         Scanner scanner = new Scanner(System.in);
         System.out.println("enter la base: ");
@@ -84,10 +84,10 @@ public class Main {
                case 3:
                    Multiplication();
                    break;
-             /*  case 4:
+              case 4:
                    Division();
                    break;
-               case 5:
+              /* case 5:
                    Puissance();
                    break;
              / case 6:
