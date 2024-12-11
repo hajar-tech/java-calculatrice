@@ -67,13 +67,14 @@ public class Main {
         }
     }
     public static void Factorielle() {
-        int num, fact;
-        fact=0;
+        double num;
         Scanner scanner = new Scanner(System.in);
         System.out.println("enter the number: ");
-        num = scanner.nextInt();
-        for (int i=num-1; i>0; i--){
-            num = num*i;
+        num = scanner.nextDouble();
+        for (double i=num-1; i>=1; i--){
+           num=num*i;
+            System.out.println("The result is: "+ num);
+
         }
         System.out.println("The result is: "+ num);
     }
