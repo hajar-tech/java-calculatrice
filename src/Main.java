@@ -54,6 +54,29 @@ public class Main {
         pow = scanner.nextDouble();
         System.out.println("The result is: "+ Math.pow(base , pow));
     }
+    public static void Racine() {
+        double num;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("enter the number: ");
+        num = scanner.nextDouble();
+        if (num < 0){
+            System.out.println("Error: the number is negative enter a positive one!!");
+        }
+        else {
+        System.out.println("The square is: "+ Math.sqrt(num));
+        }
+    }
+    public static void Factorielle() {
+        int num, fact;
+        fact=0;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("enter the number: ");
+        num = scanner.nextInt();
+        for (int i=num-1; i>0; i--){
+            num = num*i;
+        }
+        System.out.println("The result is: "+ num);
+    }
 
 
 
@@ -90,12 +113,12 @@ public class Main {
                case 5:
                    Puissance();
                    break;
-             /* case 6:
+              case 6:
                    Racine();
                    break;
                case 7:
                    Factorielle();
-                   break;*/
+                   break;
                case 8:
                    System.out.println("you finished the programme");
                    break;
