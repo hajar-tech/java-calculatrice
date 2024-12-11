@@ -45,7 +45,7 @@ public class Main {
             System.out.println("The result is: " + (num1 / num2));
         }
     }
-  /*  public static void Puissance() {
+   public static void Puissance() {
         double base, pow;
         Scanner scanner = new Scanner(System.in);
         System.out.println("enter la base: ");
@@ -53,7 +53,7 @@ public class Main {
         System.out.println("enter la puissance: ");
         pow = scanner.nextDouble();
         System.out.println("The result is: "+ Math.pow(base , pow));
-    }*/
+    }
 
 
 
@@ -87,10 +87,10 @@ public class Main {
               case 4:
                    Division();
                    break;
-              /* case 5:
+               case 5:
                    Puissance();
                    break;
-             / case 6:
+             /* case 6:
                    Racine();
                    break;
                case 7:
