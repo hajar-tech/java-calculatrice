@@ -6,7 +6,7 @@ import java.util.Scanner;
 import java.lang.Math.*;
 public class Main {
     public static double Read(){
-        Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);//instanciation de l'objet scanner de la classe Scanner
         System.out.println("enter a number: ");
         double read = scanner.nextDouble();
         return read;
@@ -14,23 +14,13 @@ public class Main {
 
     public static void Addition() {
         double num1, num2;
-       // System.out.println("enter the first number: ");
         num1 = Read();
-       // System.out.println("enter the second number: ");
         num2 = Read();
         System.out.println("The result is: " + (num1 + num2));
     }
 
-
     public static void Soustraction() {
         double num1, num2;
-        int a,b;
-        System.out.println("enter a number: ");
-        Scanner sc = new Scanner(System.in);
-        a = sc.nextInt();
-        System.out.println("enter b number");
-        b=sc.nextInt();
-
         num1 = Read();
         num2 = Read();
         System.out.println("The result is: " + (num1 - num2));
@@ -50,10 +40,8 @@ public class Main {
             while(num2==0){
                 System.out.println("Error : Impossible deviser par 0 !!");
                 num2 = Read();
-                //
             }
         System.out.println("The result is: " + (num1 / num2));
-
     }
 
     public static void Puissance() {
