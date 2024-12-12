@@ -7,80 +7,78 @@ import java.lang.Math.*;
 public class Main {
     public static double Read(){
         Scanner scanner = new Scanner(System.in);
+        System.out.println("enter a number: ");
         double read = scanner.nextDouble();
         return read;
     }
 
     public static void Addition() {
         double num1, num2;
-        System.out.println("enter the first number: ");
+       // System.out.println("enter the first number: ");
         num1 = Read();
-        System.out.println("enter the second number: ");
+       // System.out.println("enter the second number: ");
         num2 = Read();
         System.out.println("The result is: " + (num1 + num2));
     }
 
+
     public static void Soustraction() {
         double num1, num2;
-        System.out.println("enter the first number: ");
+        int a,b;
+        System.out.println("enter a number: ");
+        Scanner sc = new Scanner(System.in);
+        a = sc.nextInt();
+        System.out.println("enter b number");
+        b=sc.nextInt();
+
         num1 = Read();
-        System.out.println("enter the second number: ");
         num2 = Read();
         System.out.println("The result is: " + (num1 - num2));
     }
 
     public static void Multiplication() {
         double num1, num2;
-        System.out.println("enter the first number: ");
         num1 =Read();
-        System.out.println("enter the second number: ");
         num2 = Read();
         System.out.println("The result is: " + (num1 * num2));
     }
 
     public static void Division() {
         double num1, num2;
-        System.out.println("enter the first number: ");
-        num1 = Read();
-        System.out.println("enter the second number: ");
-        num2 = Read();
-        if (num2 == 0) {
-            System.out.println("Error : Impossible deviser par 0 !!");
-        } else {
-            System.out.println("The result is: " + (num1 / num2));
-        }
+            num1 = Read();
+            num2 = Read();
+            while(num2==0){
+                System.out.println("Error : Impossible deviser par 0 !!");
+                num2 = Read();
+                //
+            }
+        System.out.println("The result is: " + (num1 / num2));
+
     }
 
     public static void Puissance() {
         double base, pow;
-        System.out.println("enter la base: ");
         base = Read();
-        System.out.println("enter la puissance: ");
         pow = Read();
         System.out.println("The result is: " + Math.pow(base, pow));
     }
 
     public static void Racine() {
         double num;
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("enter the number: ");
-        num = scanner.nextDouble();
-        if (num < 0) {
+        num = Read();
+        while (num < 0) {
             System.out.println("Error: the number is negative enter a positive one!!");
-        } else {
-            System.out.println("The square is: " + Math.sqrt(num));
+            Read();
         }
+            System.out.println("The square is: " + Math.sqrt(num));
     }
 
     public static void Factorielle() {
         double num;
-        Scanner scanner = new Scanner(System.in);
         System.out.println("enter the number: ");
-        num = scanner.nextDouble();
+        num = Read();
         for (double i = num - 1; i >= 1; i--) {
             num = num * i;
-            //System.out.println("The result is: " + num);
-
         }
         System.out.println("The result is: " + num);
     }
